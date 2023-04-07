@@ -1,7 +1,10 @@
 import React from "react";
 
-const Title = () => {
-  return <div>Title</div>;
+const Title = ({ contentView, setContentView, title }) => {
+  const handleContentView = () => {
+    setContentView(!contentView);
+  };
+  return <div onClick={handleContentView}>{title}</div>;
 };
 
 export default Title;

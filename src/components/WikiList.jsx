@@ -8,7 +8,9 @@ const WikiList = ({ wikiList }) => {
   return (
     <ul>
       {wikiList.map((v) => {
-        return <ListItem key={v.id} title={v.title} content={v.content} />;
+        return (
+          <ListItem key={v.id} id={v.id} title={v.title} content={v.content} />
+        );
       })}
     </ul>
   );
