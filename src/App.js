@@ -1,11 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home/Home";
+import Main from "./pages/Main/Main";
+import Wiki from "./pages/Wiki/Wiki";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Main />}></Route>
+      <Route path="/wiki" element={<Wiki />}></Route>
     </Routes>
   );
 }
