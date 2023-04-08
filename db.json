@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "title1",
-      "content": "Dan Jukes"
+      "content": ["title1본문맞음", "title2"]
     },
     {
       "id": 2,
