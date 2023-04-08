@@ -1,13 +1,12 @@
-import React from "react";
 import Wiki from "../Wiki/Wiki";
 
-const Home = () => {
+const Main = () => {
   return (
-    <div>
+    <>
       Main
       <Wiki />
-    </div>
+    </>
   );
 };
 
-export default Home;
+export default Main;

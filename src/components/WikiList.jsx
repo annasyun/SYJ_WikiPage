@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ListItem from "./ListItem";
+import WikiListItem from "./WikiListItem";
 import Pagination from "./Pagination";
 
 const WikiList = ({ wikiList }) => {
@@ -13,19 +13,19 @@ const WikiList = ({ wikiList }) => {
   }
 
   return (
-    <ul>
-      {wikiList.slice(offset, offset + limit).map((v) => {
-        return (
-          <ListItem key={v.id} id={v.id} title={v.title} content={v.content} />
-        );
-      })}
+    <>
+      <ul>
+        {wikiList.slice(offset, offset + limit).map((item) => {
+          return <WikiListItem key={item.id} id={item.id} title={item.title} />;
+        })}
+      </ul>
       <Pagination
         total={wikiList.length}
         limit={limit}
         page={page}
         setPage={setPage}
       />
-    </ul>
+    </>
   );
 };
 
