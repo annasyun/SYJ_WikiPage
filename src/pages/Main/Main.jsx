@@ -1,7 +1,8 @@
 import Wiki from "../Wiki/Wiki";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import useInput from "../../hooks/useInput";
 import { postWikiAxios } from "../../api/wiki";
+import { Header, WikiTitle } from "./styled";
 
 const Main = () => {
   const [viewModal, setViewModal] = useState(false);
@@ -25,7 +26,9 @@ const Main = () => {
 
   return (
     <>
-      Main
+      <Header>
+        <WikiTitle>위키백과</WikiTitle>
+      </Header>
       <Wiki />
       <button onClick={handleViewModal}>add</button>
       {viewModal && (

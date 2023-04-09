@@ -11,26 +11,25 @@ const Nav = styled.nav`
 const Button = styled.button`
   border: none;
   border-radius: 8px;
-  padding: 8px;
+  padding: 10px;
   margin: 0;
-  background: #9fc4e7;
-  color: white;
+  background: transparent;
+  color: black;
   font-size: 1rem;
 
   &:hover {
-    background: #3366cc;
+    font-weight: bold;
     cursor: pointer;
     transform: translateY(-2px);
   }
 
   &[disabled] {
-    background: #ebecf0;
+    color: transparent;
     cursor: revert;
     transform: revert;
   }
 
   &[aria-current] {
-    background: #3366cc;
     font-weight: bold;
     cursor: revert;
     transform: revert;
