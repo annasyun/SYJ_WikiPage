@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getWikiAxios } from "../../api/wiki";
 import WikiList from "../../components/WikiList";
-import Pagination from "../../components/Pagination";
+import Pagination from "../../components/Pagination/Pagination";
 
 const Wiki = () => {
   const [wikiList, setWikiList] = useState("");

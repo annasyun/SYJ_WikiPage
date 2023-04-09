@@ -1,5 +1,5 @@
 import Wiki from "../Wiki/Wiki";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useInput from "../../hooks/useInput";
 import { postWikiAxios } from "../../api/wiki";
 
