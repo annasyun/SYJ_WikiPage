@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getWikiAxios } from "../../api/wiki";
 import WikiList from "../../components/WikiList";
 import Pagination from "../../components/Pagination/Pagination";
+import { WikiUl } from "./styled";
 
 const Wiki = () => {
   const [wikiList, setWikiList] = useState("");
@@ -26,11 +27,15 @@ const Wiki = () => {
 
   return (
     <>
-      <ul>
+      <WikiUl>
         {wikiList.slice(offset, offset + limit).map((item) => {
-          return <WikiList key={item.id} id={item.id} title={item.title} />;
+          return (
+            <>
+              <WikiList key={item.id} id={item.id} title={item.title} />
+            </>
+          );
         })}
-      </ul>
+      </WikiUl>
       <Pagination
         total={wikiList.length}
         limit={limit}

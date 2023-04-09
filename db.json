@@ -24,13 +24,9 @@
       ]
     },
     {
-      "id": 4,
       "title": "title4",
-      "content": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
+      "content": "Million tonne punch,Damage resistance,Superhuman reflexesㄴㅇㅇㅇ",
+      "id": 4
     },
     {
       "id": 5,
@@ -103,41 +99,6 @@
         "Damage resistance",
         "Superhuman reflexes"
       ]
-    },
-    {
-      "title": "jk",
-      "content": "jj",
-      "id": 13
-    },
-    {
-      "title": "오오오",
-      "content": "뉴뉴뉴뉴",
-      "id": 14
-    },
-    {
-      "title": "우왕",
-      "content": "뉴우",
-      "id": 15
-    },
-    {
-      "title": "ㅋㅋ",
-      "content": "ㅋㅋ",
-      "id": 16
-    },
-    {
-      "title": "바로",
-      "content": "추가",
-      "id": 17
-    },
-    {
-      "title": "ㄱㄱ",
-      "content": "ㄱㄱ",
-      "id": 18
-    },
-    {
-      "title": "ㄴㄴ",
-      "content": "ㄴㄴ",
-      "id": 19
     }
   ]
 }

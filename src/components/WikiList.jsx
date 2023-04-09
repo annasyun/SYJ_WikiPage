@@ -14,6 +14,7 @@ const WikiListItem = styled.li`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  color: inherit;
 `;
 
 const WikiList = ({ id, title }) => {
