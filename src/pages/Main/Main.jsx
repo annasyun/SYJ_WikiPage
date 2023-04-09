@@ -1,6 +1,7 @@
 import Wiki from "../Wiki/Wiki";
 import { useState } from "react";
 import useInput from "../../hooks/useInput";
+import { postWikiAxios } from "../../api/wiki";
 
 const Main = () => {
   const [viewModal, setViewModal] = useState(false);
@@ -11,12 +12,12 @@ const Main = () => {
     setViewModal(true);
   };
 
-  const handleSave = () => {
-    // 입력된 제목과 내용을 서버에 저장하는 로직
-    // ...
-
-    // 추가 입력창 숨기기
-    setViewModal(false);
+  const handleSave = async () => {
+    const postItem = await postWikiAxios({
+      title: modalTitle.value,
+      content: modalContent.value,
+    });
+    setViewModal(!viewModal);
     // 입력된 제목과 내용 초기화
     modalTitle.setValue("");
     modalContent.setValue("");

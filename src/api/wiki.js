@@ -9,3 +9,8 @@ export const updateWikiAxios = async (id, body) => {
   const response = await axios.put(`http://localhost:5000/data/${id}`, body);
   return response.data;
 };
+
+export const postWikiAxios = async (body) => {
+  const response = await axios.post("http://localhost:5000/data", body);
+  return response.data;
+};
