@@ -2,6 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 const Title = styled.h2`
+  font-size: 20px;
   display: block;
   width: 90%;
   padding: 10px;

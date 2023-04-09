@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-const Content = styled.h2`
+const Content = styled.p`
   display: block;
   width: 90%;
   height: 50vh;
