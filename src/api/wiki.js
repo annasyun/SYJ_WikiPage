@@ -19,3 +19,5 @@ export const deleteWikiAxios = async (id) => {
   const response = await axios.delete(`http://localhost:5000/data/${id}`);
   return response.data;
 };
+
+

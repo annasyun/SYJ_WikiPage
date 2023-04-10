@@ -23,7 +23,6 @@ const WikiItem = () => {
   const handleEdit = () => {
     setEditable(!editable);
   };
-  console.log(editable);
 
   useEffect(() => {
     findListItem();
